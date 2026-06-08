@@ -1,0 +1,261 @@
+Year,State,Value
+2000,Alabama,63.6
+2001,Alabama,63
+2002,Alabama,63.6
+2003,Alabama,62.7
+2004,Alabama,63.3
+2005,Alabama,63.4
+2006,Alabama,64.2
+2007,Alabama,64.4
+2008,Alabama,62.9
+2009,Alabama,62.9
+2010,Alabama,62.7
+2011,Alabama,63.8
+2012,Alabama,64.9
+2013,Alabama,62.6
+2014,Alabama,62
+2015,Alabama,64.6
+2016,Alabama,65.3
+2017,Alabama,65
+2018,Alabama,64.5
+2019,Alabama,65.4
+2020,Alabama,64.9
+2021,Alabama,64.2
+2022,Alabama,64
+2023,Alabama,65.3
+2024,Alabama,65.5
+2025,Alabama,64.6
+2000,Arkansas,60.9
+2001,Arkansas,61.2
+2002,Arkansas,60.6
+2003,Arkansas,60.3
+2004,Arkansas,61
+2005,Arkansas,62
+2006,Arkansas,62
+2007,Arkansas,61.8
+2008,Arkansas,59.9
+2009,Arkansas,59.9
+2010,Arkansas,61.2
+2011,Arkansas,61.8
+2012,Arkansas,63.6
+2013,Arkansas,59.6
+2014,Arkansas,58.7
+2015,Arkansas,61.4
+2016,Arkansas,62.8
+2017,Arkansas,62.5
+2018,Arkansas,61.2
+2019,Arkansas,61.2
+2020,Arkansas,61.2
+2021,Arkansas,61.4
+2022,Arkansas,61.2
+2023,Arkansas,62.9
+2024,Arkansas,63.3
+2025,Arkansas,62.6
+2000,Florida,70.6
+2001,Florida,70.9
+2002,Florida,71.3
+2003,Florida,70.9
+2004,Florida,70.8
+2005,Florida,70.8
+2006,Florida,71.4
+2007,Florida,71.8
+2008,Florida,70.8
+2009,Florida,71.2
+2010,Florida,69.2
+2011,Florida,71.7
+2012,Florida,71.9
+2013,Florida,71.7
+2014,Florida,70.6
+2015,Florida,73.4
+2016,Florida,72.5
+2017,Florida,72.8
+2018,Florida,72.3
+2019,Florida,73.2
+2020,Florida,73.2
+2021,Florida,72.2
+2022,Florida,72.5
+2023,Florida,73.3
+2024,Florida,72.9
+2025,Florida,72.3
+2000,Georgia,63.4
+2001,Georgia,63.9
+2002,Georgia,64.4
+2003,Georgia,63.3
+2004,Georgia,64
+2005,Georgia,63.8
+2006,Georgia,64.6
+2007,Georgia,64.8
+2008,Georgia,63.5
+2009,Georgia,63.4
+2010,Georgia,63
+2011,Georgia,64.6
+2012,Georgia,65.5
+2013,Georgia,63.4
+2014,Georgia,63
+2015,Georgia,65.3
+2016,Georgia,65.8
+2017,Georgia,65.8
+2018,Georgia,65.1
+2019,Georgia,66.2
+2020,Georgia,65.6
+2021,Georgia,64.6
+2022,Georgia,64.8
+2023,Georgia,65.6
+2024,Georgia,65.9
+2025,Georgia,64.9
+2000,Kentucky,55.7
+2001,Kentucky,56.6
+2002,Kentucky,56.8
+2003,Kentucky,55.2
+2004,Kentucky,56.4
+2005,Kentucky,56.8
+2006,Kentucky,56.8
+2007,Kentucky,57.7
+2008,Kentucky,55.4
+2009,Kentucky,55.4
+2010,Kentucky,56
+2011,Kentucky,56.9
+2012,Kentucky,58.4
+2013,Kentucky,55
+2014,Kentucky,54.3
+2015,Kentucky,56.6
+2016,Kentucky,57.9
+2017,Kentucky,57.8
+2018,Kentucky,57
+2019,Kentucky,57.5
+2020,Kentucky,57.1
+2021,Kentucky,57
+2022,Kentucky,56.3
+2023,Kentucky,58.1
+2024,Kentucky,58.9
+2025,Kentucky,57.1
+2000,Mississippi,64.2
+2001,Mississippi,63.7
+2002,Mississippi,64
+2003,Mississippi,63.3
+2004,Mississippi,64
+2005,Mississippi,64.3
+2006,Mississippi,64.8
+2007,Mississippi,65
+2008,Mississippi,63.3
+2009,Mississippi,63.6
+2010,Mississippi,63.5
+2011,Mississippi,64.5
+2012,Mississippi,65.7
+2013,Mississippi,63.1
+2014,Mississippi,62.3
+2015,Mississippi,65.3
+2016,Mississippi,65.9
+2017,Mississippi,65.8
+2018,Mississippi,64.8
+2019,Mississippi,65.2
+2020,Mississippi,65.5
+2021,Mississippi,64.7
+2022,Mississippi,64.7
+2023,Mississippi,66.7
+2024,Mississippi,66.5
+2025,Mississippi,66
+2000,North Carolina,58.4
+2001,North Carolina,59.4
+2002,North Carolina,60
+2003,North Carolina,58.7
+2004,North Carolina,59.3
+2005,North Carolina,59.4
+2006,North Carolina,59.8
+2007,North Carolina,60.5
+2008,North Carolina,59.3
+2009,North Carolina,58.9
+2010,North Carolina,59
+2011,North Carolina,60.4
+2012,North Carolina,60.7
+2013,North Carolina,58.6
+2014,North Carolina,58.4
+2015,North Carolina,60.5
+2016,North Carolina,60.8
+2017,North Carolina,61
+2018,North Carolina,60.4
+2019,North Carolina,61.3
+2020,North Carolina,60.8
+2021,North Carolina,60.2
+2022,North Carolina,59.9
+2023,North Carolina,60.8
+2024,North Carolina,61.1
+2025,North Carolina,59.9
+2000,South Carolina,62.2
+2001,South Carolina,63.3
+2002,South Carolina,63.7
+2003,South Carolina,62.4
+2004,South Carolina,63.2
+2005,South Carolina,63.1
+2006,South Carolina,63.6
+2007,South Carolina,64.3
+2008,South Carolina,63
+2009,South Carolina,62.7
+2010,South Carolina,62.6
+2011,South Carolina,64.1
+2012,South Carolina,64.5
+2013,South Carolina,62.3
+2014,South Carolina,62.2
+2015,South Carolina,64.5
+2016,South Carolina,64.9
+2017,South Carolina,65.1
+2018,South Carolina,64.3
+2019,South Carolina,65
+2020,South Carolina,64.6
+2021,South Carolina,63.7
+2022,South Carolina,63.8
+2023,South Carolina,64.3
+2024,South Carolina,64.9
+2025,South Carolina,63.7
+2000,Tennessee,58
+2001,Tennessee,58.3
+2002,Tennessee,58.7
+2003,Tennessee,57.5
+2004,Tennessee,58.5
+2005,Tennessee,58.8
+2006,Tennessee,58.9
+2007,Tennessee,59.9
+2008,Tennessee,57.6
+2009,Tennessee,57.6
+2010,Tennessee,57.9
+2011,Tennessee,58.9
+2012,Tennessee,60.3
+2013,Tennessee,57.1
+2014,Tennessee,56.6
+2015,Tennessee,59
+2016,Tennessee,60.3
+2017,Tennessee,60
+2018,Tennessee,59.1
+2019,Tennessee,59.8
+2020,Tennessee,59.3
+2021,Tennessee,59
+2022,Tennessee,58.5
+2023,Tennessee,60
+2024,Tennessee,60.6
+2025,Tennessee,59.6
+2000,Virginia,54.9
+2001,Virginia,55.8
+2002,Virginia,56.6
+2003,Virginia,55
+2004,Virginia,55.9
+2005,Virginia,55.9
+2006,Virginia,56.6
+2007,Virginia,56.8
+2008,Virginia,55.7
+2009,Virginia,55.2
+2010,Virginia,55.9
+2011,Virginia,57
+2012,Virginia,57.6
+2013,Virginia,55.1
+2014,Virginia,54.4
+2015,Virginia,56.5
+2016,Virginia,57.1
+2017,Virginia,57.3
+2018,Virginia,56.6
+2019,Virginia,57.5
+2020,Virginia,57.4
+2021,Virginia,57.1
+2022,Virginia,56.2
+2023,Virginia,57.5
+2024,Virginia,58.1
+2025,Virginia,56.5

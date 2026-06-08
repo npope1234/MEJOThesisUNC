@@ -27,7 +27,12 @@
     <aside class="map-sidebar">
       <section class="map-panel-card">
         <h1 class="map-title">Invasive Plants of the Southeast</h1>
-        <p class="subtle">Select a species to view its distribution</p>
+
+        <p class="subtle">
+This map is an exploratory tool for seeing where selected invasive plant records
+  appear across the Southeast and how those records overlap with Indigenous
+  territories.
+</p>
 
         <label class="field-label" for="speciesSelect">Select Species:</label>
         <select id="speciesSelect" class="select"></select>
@@ -50,6 +55,17 @@
         <label class="switch-row"><span>Invasive Species</span><span class="switch"><input id="toggleInvasive" type="checkbox" checked /><span class="slider"></span></span></label>
         <label class="switch-row"><span>Indigenous Lands</span><span class="switch"><input id="toggleTerritories" type="checkbox" checked /><span class="slider"></span></span></label>
 
+      <div class="divider"></div>
+      
+      <label class="field-label" for="territorySelect">Select Indigenous Territory:</label>
+      <select id="territorySelect" class="select">
+        <option value="">Choose a territory…</option>
+      </select>
+      
+      <p class="subtle">
+  Choose a territory from the list, or click anywhere on the map to see which Indigenous territories overlap there.
+</p>
+
         <div class="divider"></div>
         <h3>Legend</h3>
         <div class="legend-stack">
@@ -67,9 +83,12 @@
     </aside>
 
     <section class="map-stage">
-      <div class="instruction-card"><div>ⓘ Click points to view occurrence details</div><div class="subtle">Click Indigenous territories for cultural context</div></div>
-      <div id="map"></div>
-    </section>
+  <div class="instruction-card">
+    <div>ⓘ Click occurrence points to view plant details</div>
+    <div class="subtle">Click anywhere on the map to see overlapping Indigenous territories</div>
+  </div>
+  <div id="map"></div>
+</section>
 
     <aside class="map-details">
       <section class="map-panel-card">
@@ -85,7 +104,7 @@
     </aside>
   </main>
 
-  <footer class="footer page">Designed as an editorial, educational platform prototype by Nijah Pope.</footer>
+  <footer class="footer page">Designed as an educational platform prototype in assistance with AI.</footer>
 
   <button class="theme-fab" type="button" data-theme-toggle aria-label="Toggle light or dark mode">☼</button>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

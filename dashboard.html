@@ -17,7 +17,14 @@
   <main class="page">
     <section class="dashboard-hero">
       <h1 style="font-size:clamp(2.6rem,6vw,5.2rem)">Understanding the Impact</h1>
-      <p class="lede">Use this page to read the dataset through summary cards, interactive filters, and charts that turn individual occurrence points into broader regional patterns.</p>
+      <p class="lede">
+  This dashboard contextualizes the invasive plants map by providing climate data on temperature, precipitation and drought conditions across the Southeast. Climate data helps provide environmental context for invasive plant spread, but it
+  does not explain the whole story. Temperature, precipitation and drought patterns
+  can shape where plants survive or become harder to manage, while human decisions,
+  land disturbance, ornamental planting, infrastructure, policy and stewardship all
+  influence how invasive species move through the Southeast.
+</p>
+</p></p>
     </section>
 
     <section class="dashboard-grid" aria-label="Data summary metrics">
@@ -52,13 +59,99 @@
           <li><strong>Observation records are not the same as total spread.</strong> They reflect where observations were recorded and shared.</li>
           <li><strong>Dense clusters can point to ecological pressure and reporting patterns.</strong> Use the map page to compare clusters with Indigenous territory context.</li>
           <li><strong>Environmental justice questions emerge when ecological change intersects with governance, access, land history, and community stewardship.</strong></li>
-          <li><strong>The next reporting layer should add interviews.</strong> Pair the dashboard with Indigenous voices, scientists, and land managers to avoid treating land as only a dataset.</li>
         </ul>
       </article>
     </section>
+
+    <section class="section">
+  <div class="section-heading">
+    <div>
+      <h2>Climate</h2>
+      <p>
+        Temperature, precipitation, and drought conditions provide environmental context
+        for understanding where invasive plants may survive, spread, or become harder to manage. These charts provide context, not proof of causation. Temperature, precipitation and drought patterns should be considered alongside the invasive plant map, land-use history, Indigenous stewardship and interview stories.
+      </p>
+    </div>
+  </div>
+
+  <div class="chart-controls">
+    <label class="field-label" for="climateStateFilter">Select state:</label>
+    <select id="climateStateFilter" class="filter-select">
+      <option value="Alabama">Alabama</option>
+      <option value="Arkansas">Arkansas</option>
+      <option value="Florida">Florida</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Kentucky">Kentucky</option>
+      <option value="Mississippi">Mississippi</option>
+      <option value="North Carolina" selected>North Carolina</option>
+      <option value="South Carolina">South Carolina</option>
+      <option value="Tennessee">Tennessee</option>
+      <option value="Virginia">Virginia</option>
+    </select>
+  </div>
+
+  <article class="chart-card">
+  <h2>Average Annual Temperature</h2>
+  <p class="subtle">Annual average temperature for the selected state, 2000–2025.</p>
+  <canvas id="temperatureChart" aria-label="Line chart showing average annual temperature"></canvas>
+
+  <p class="chart-caption">
+    Across the selected Southeastern states, annual temperatures fluctuate from year to year, but the later years generally show warmer conditions than the early 2000s. This pattern matters because longer warm periods can extend growing seasons and give some invasive plants more time to grow, reproduce, and recover after disturbance.
+  </p>
+</article>
+
+    <article class="chart-card">
+  <h2>Annual Precipitation</h2>
+  <p class="subtle">Annual precipitation for the selected state, 2000–2025.</p>
+  <canvas id="precipitationChart" aria-label="Line chart showing annual precipitation"></canvas>
+
+  <p class="chart-caption">
+    Annual precipitation shows that the Southeast experiences both very wet and relatively dry periods. These swings matter because heavy rainfall can increase flooding, erosion, and seed movement, while drier years can stress native vegetation and change plant competition.
+  </p>
+</article>
+
+  <section class="analytics-grid section">
+    <article class="chart-card">
+  <h2>Drought Conditions</h2>
+  <p class="subtle">
+    D1 means moderate drought or worse. D2+ means severe drought or worse.
+  </p>
+  <canvas id="droughtChart" aria-label="Line chart showing drought conditions"></canvas>
+
+  <p class="chart-caption">
+    Drought conditions rise and fall unevenly across the timeline, with some years showing much larger areas in D1 or D2+ drought than others. These drought periods can weaken native plant communities, and the recovery period after drought may create openings for fast-growing invasive plants.
+  </p>
+</article>
+
+    <article class="text-card">
+  <h2>Why this matters</h2>
+  <ul class="insight-list">
+    <li>
+      <strong>Warmer temperatures can extend growing seasons.</strong>
+      Longer warm periods may allow some invasive plants to leaf out earlier, remain active later into the year, and recover more quickly after disturbance.
+    </li>
+
+    <li>
+      <strong>Heavy precipitation can create new openings for invasion.</strong>
+      Flooding, erosion, storm damage, and saturated soils can disturb native plant communities, move seeds or plant fragments, and expose bare ground where invasives often establish.
+    </li>
+
+    <li>
+      <strong>Drought can weaken native plant communities.</strong>
+      Even when drought stresses invasive plants too, it can reduce native plant cover and competition. After rainfall returns, fast-growing invasives may take advantage of the recovery period.
+    </li>
+
+    <li>
+      <strong>Climate stress and invasive plants can reinforce each other.</strong>
+      When invasives form dense patches or monocultures, they can reduce biodiversity, weaken soil stability, limit native plant recovery, and make ecosystems less resilient to heat, flooding, and drought.
+    </li>
+  </ul>
+</article>
+  </section>
+</section>
   </main>
 
-  <footer class="footer page">Designed as an editorial, educational platform prototype by Nijah Pope.</footer>
+  <footer class="footer page">Designed as an educational platform prototype in assistance with AI.</footer>
   <button class="theme-fab" type="button" data-theme-toggle aria-label="Toggle light or dark mode">☼</button>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./site.js"></script>

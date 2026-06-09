@@ -1467,5 +1467,15 @@ input:checked + .slider:before {
   display: block;
 }
 
+.story-link {
+  color: var(--green);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.story-link:hover {
+  color: var(--red);
+}
 
 .audio-button { display: none !important; }

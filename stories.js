@@ -75,7 +75,7 @@ const stories = [
     
     'Across the Southeast, invasive plants are often described as “aliens,” “exotics” or foreign threats. Those words may sound technical, but they carry cultural weight. Weakley said the language used for plants can echo the language used for people: an alien species is introduced, then it naturalizes, just as immigrants are sometimes described through a naturalization process. The parallels are not exact, he said, but they can make ecological debates culturally uncomfortable.',
     
-    'Others argue that invasive-species narratives can reduce complex ecological, cultural and economic relationships into a simple “good” versus “bad” battle between native and non-native species.',
+    '[Others argue](https://read.dukeupress.edu/environmental-humanities/article/7/1/1/8141/Invasive-Narratives-and-the-Inverse-of-Slow) that invasive-species narratives can reduce complex ecological, cultural and economic relationships into a simple “good” versus “bad” battle between native and non-native species.',
     
     '“There’s a difference between exotic or alien species and invasive species,” Weakley said. “Alien simply means that it’s not from here. Invasive means that it is not from here, and it also is detrimental or negative in some way, economically or ecologically negative.”',
     
@@ -83,7 +83,7 @@ const stories = [
     
     '“Maybe one out of 10 non-native species is invasive,” Weakley said. This means most are not causing ecological harm. But he also warned that the language around harmful plants can become culturally uncomfortable.',
     
-    'But when they do, the ecological damage can be severe. Invasive plants outcompete native species, take over habitats and alter the basic processes that allow ecosystems to function. Alien plant species are often more abundant along fragment edges than in the interiors of habitat patches, and that human-dominated landscapes can help facilitate invasion.',
+    'But when they do, the ecological damage can be severe. Invasive plants outcompete native species, take over habitats and alter the basic processes that allow ecosystems to function. Alien plant species are often more abundant along fragment edges than in the interiors of habitat patches, and that [human-dominated landscapes](https://www.researchgate.net/publication/225809532_Plant_invasions_in_the_landscape) can help facilitate invasion.',
     
     {
       type: 'image',
@@ -127,7 +127,7 @@ const stories = [
       
       'Bargeron is director of the Center for Invasive Species and Ecosystem Health at the University of Georgia, also known as Bugwood. For about 26 years, he has worked in invasive species outreach, education, technology development and policy. He has also served on federal advisory committees related to invasive species management, giving him a wide view of how science, public awareness and policy shape the field.',
       
-      'That field is still relatively young. “The field at a national level of invasive species is not even 30 years old yet,” Bargeron said. He noted the 1999 executive order signed by President Bill Clinton as a turning point in coordinated national attention to invasive species. Public awareness has grown since then, but unevenly. People may recognize Burmese pythons, feral hogs or “murder hornets,” but not always understand those examples as part of a broader invasive-species issue.',
+      'That field is still relatively young. “The field at a national level of invasive species is not even 30 years old yet,” Bargeron said. He noted the 1999 [executive order](https://www.invasivespeciesinfo.gov/executive-order-13112) signed by President Bill Clinton as a turning point in coordinated national attention to invasive species. Public awareness has grown since then, but unevenly. People may recognize Burmese pythons, feral hogs or “murder hornets,” but not always understand those examples as part of a broader invasive-species issue.',
       
       'That uneven awareness matters for invasive plant reporting in the Southeast, especially when stories rely on language like “alien” or “exotic.” Those terms can carry cultural baggage and encourage fear-based narratives when they are used without explanation.',
       
@@ -139,7 +139,7 @@ const stories = [
       
       'Bargeron also challenged simple solutions. Full eradication of all invasive plants in the United States, he said, is unrealistic and would require more resources than the country is likely to invest. Instead, he argues for focusing on “the worst species,” those causing the most environmental, ecological and economic harm, while also prioritizing prevention and early action against new insects, pathogens and plants before they become impossible to contain.',
       
-      'His work with EDDMapS, an invasive species mapping system which he helped create, shows how data can help tell those stories responsibly.',
+      'His work with [EDDMapS](https://www.eddmaps.org/index.cfm), an invasive species mapping system which he helped create, shows how data can help tell those stories responsibly.',
       
       '“EDDMapS is nearing its 20th anniversary,” Bargeron said. “It is the largest collection of verified data on invasive species that exist in the United States.” The platform gathers reports from public submissions, iNaturalist, federal databases and other sources, supporting education, research modeling, early detection and change-over-time storytelling.',
       
@@ -150,7 +150,7 @@ const stories = [
         caption: 'An EDDMapS county-level map shows reported Japanese honeysuckle records across North America. Bargeron said invasive species maps can help reveal patterns, but a blank area does not necessarily mean a species is absent.'
       },
       
-      'But Bargeron is clear that maps have limits. In the Southeast, where much land is privately owned, data gaps are common. Studies have shown that invasive patterns are often shaped by habitat edges and surrounding human-dominated landscapes, which means maps can reflect reporting patterns and landscape context as much as biological absence or presence.',
+      'But Bargeron is clear that maps have limits. In the Southeast, where much land is privately owned, data gaps are common. [Studies](https://www.montsevila.org/papers/Vila&Ibanez_2011.pdf) have shown that invasive patterns are often shaped by habitat edges and surrounding human-dominated landscapes, which means maps can reflect reporting patterns and landscape context as much as biological absence or presence.',
       
       '“Just because there’s not a point on the map or just because a county is not filled in does not mean that the species is not there,” he said.',
       
@@ -184,7 +184,7 @@ const stories = [
       
       'Shen, a Ph.D. student in the Department of Geography at the University of Tennessee, studies invasive kudzu through remote sensing, using satellite imagery, spectral analysis and seasonal plant patterns to map its spread in the southeastern United States. Her work shows how data reveals where invasive plants are spreading, what forces may be driving that spread, and where scientific understanding still has gaps.',
       
-      'In a recent study, Shen used satellite imagery and other data sources to map kudzu invasion in Knox County, Tennessee, from 2020 to 2022. She found that kudzu increased greatly during that period, and that the plant’s growing season ran from May to September and peaked in August. Instead of relying only on ground observations, Shen combined remote sensing data, statistics and kudzu’s seasonal growth pattern to identify the plant from above.',
+      'In a recent [study](https://www.sciencedirect.com/science/article/pii/S1569843224002267?via%3Dihub), Shen used satellite imagery and other data sources to map kudzu invasion in Knox County, Tennessee, from 2020 to 2022. She found that kudzu increased greatly during that period, and that the plant’s growing season ran from May to September and peaked in August. Instead of relying only on ground observations, Shen combined remote sensing data, statistics and kudzu’s seasonal growth pattern to identify the plant from above.',
 
       {
         type: 'image',
@@ -249,13 +249,13 @@ const stories = [
       
       'Those differences matter for environmental management. In the Southeast, where tribal nations may not control large areas of federally recognized reservation land, land stewardship often depends on local partnerships, governance capacity and community-led action. Hiraldo talked about the Coharie Tribe’s restoration of the Great Coharie River as one example. The tribe, she said, saw a need to restore the waterways and created a grassroots effort to “restore and actively use those waterways as they traditionally did.” Over time, that work brought in local agencies, creating practical opportunities for co-management.',
       
-      'This form of co-management can pay dividends for the people involved. A study in Ecology and Society found that conservation efforts were more likely to produce positive social and ecological outcomes when Indigenous peoples and local communities had substantial influence over decision-making.',
+      'This form of co-management can pay dividends for the people involved. A study in [Ecology and Society](https://iucn.org/sites/default/files/2022-06/es-2021-12625.pdf) found that conservation efforts were more likely to produce positive social and ecological outcomes when Indigenous peoples and local communities had substantial influence over decision-making.',
       
       `Hiraldo said one gap in land management may exist within tribal governments themselves: some tribes have been proactive and created land-use plans to address natural resources, while others haven't had the opportunity. Land-use plans can help tribes determine what land should be used for commercial development, housing, conservation, or other community priorities. For invasive plant management, those tools could shape decisions about monitoring, removal, restoration, and the protection of culturally important plants.`,
       
       'Land management requires data, and the data itself can also create ethical dilemmas for Indigenous people. Hiraldo said outside mapping can undermine Indigenous decision-making when “the tribe wouldn’t want those spaces or land identified” or when mapping happens “without consultation or not in partnership with the tribal communities.”',
       
-      'Indigenous nations are more likely to remain involved in environmental collaborations when partnerships respect Indigenous knowledge, support self-determination, involve communities early and allow Indigenous partners to control how knowledge is shared. To Hiraldo, Indigenous data is broader than coordinates, maps or spreadsheets.',
+      'Indigenous nations are more likely to remain involved in [environmental collaborations](https://digitalcommons.osgoode.yorku.ca/cgi/viewcontent.cgi?article=3896&context=scholarly_works) when partnerships respect Indigenous knowledge, support self-determination, involve communities early and allow Indigenous partners to control how knowledge is shared. To Hiraldo, Indigenous data is broader than coordinates, maps or spreadsheets.',
       
       '“Our stories, the land, you know these data points that we would typically see in quantitative kind of analysis, it’s all data and it’s all data that belongs to the tribal community,” she said.',
       
@@ -307,6 +307,12 @@ const stories = [
 
     `“We don’t have jurisdiction on it,” Bell said. “We can’t go in there and just do what we want to do.”`,
 
+    'Invasive species do not follow federal, tribal, state, local or private boundaries, which makes [coordination](https://www.doi.gov/sites/doi.gov/files/uploads/isac_federal-tribal_white_paper_21nov2017.pdf) across jurisdictions essential. Bell’s concern reflects that same problem: The river is a shared ecological system, but the tribe’s ability to respond is shaped by ownership, easements, leases and state permission.',
+    
+    'Bell said the issue is not simply that the state has conservation responsibilities. He said the frustration is that the river has changed while the Coharie community has had limited authority and resources to maintain access.',
+    
+    '“If the Coharie people had a little more responsibility with the same amount of funding as the state has in managing the river system itself, the alligator weed wouldn’t be near as bad as this,” Bell said.',
+
     `The Great Coharie River Initiative grew out of that frustration. Bell said the initiative began in 2015 with a simple goal: open the river so people could paddle again. The work involved clearing fallen trees, removing debris and trying to keep a navigable route through a river increasingly choked by aquatic weeds.`,
 
     `The work became even more urgent after hurricanes Matthew and Florence. Bell said storms, beaver activity and reduced canopy cover opened the river to more sunlight and slower water, creating conditions where alligator weed, smartweed and parrot feather could spread and outcompete native plants like lizard’s tail.`,
@@ -317,6 +323,8 @@ const stories = [
       alt: 'A section of the Great Coharie River surrounded by trees and aquatic vegetation',
       caption: 'Alligator weed has taken over land edges of the Great Coharie River, outcompeting native species such as Lizard’s tail.'
     },
+
+    'Invasive species can affect [community](https://www.doi.gov/sites/default/files/documents/2024-02/isac-underserved-communities-white-paper-november-2023.pdf) wellness, cultural and Indigenous practices, public health, agriculture and ecosystems, even though those cultural impacts are often difficult to measure. Bell’s story shows what that looks like locally: An invasive plant problem becomes an access problem, a governance problem and a cultural loss.',
 
     `Kullen Bell, who also works with the river initiative, said the difference is that the river is not an abstract conservation site for the Coharie community.`,
 
@@ -331,7 +339,7 @@ const stories = [
       caption: 'The Great Coharie River Initiative provides river tours to teach about the Coharie tribe’s history with the river.',
     },
     
-    'The tribe’s work is also part of a larger question about Indigenous-led conservation. A study in Ecology and Society found that conservation efforts were more likely to produce positive social and ecological outcomes when Indigenous peoples and local communities had substantial influence over decision-making. Bell’s experience suggests why that matters: The people closest to the river are often the ones most invested in keeping it alive.',
+    'The tribe’s work is also part of a larger question about Indigenous-led conservation. A study in [Ecology and Society](https://iucn.org/sites/default/files/2022-06/es-2021-12625.pdf) found that conservation efforts were more likely to produce positive social and ecological outcomes when Indigenous peoples and local communities had substantial influence over decision-making. Bell’s experience suggests why that matters: The people closest to the river are often the ones most invested in keeping it alive.',
 
     '“All in all, a little more cooperation and support from the state would be great,” Bell said. “Right now, seems like the community is the only one that’s interested in it.”',
     
@@ -429,23 +437,32 @@ const initialIndex = stories.findIndex((story) => {
 selectStory(initialIndex >= 0 ? initialIndex : 1, false);
 }
 
-function renderStoryBody(storyBody) {
-  return storyBody.map((item) => {
+function renderInlineLinks(text) {
+  const escaped = escapeHTML(text);
+
+  return escaped.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    '<a class="story-link" href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+  );
+}
+
+function renderStoryBody(body = []) {
+  return body.map((item) => {
     if (typeof item === 'string') {
-      return `<p>${escapeHTML(item)}</p>`;
+      return `<p>${renderInlineLinks(item)}</p>`;
+    }
+
+    if (item.type === 'subhead') {
+      return `<h3 class="story-subhead">${escapeHTML(item.text)}</h3>`;
     }
 
     if (item.type === 'image') {
       return `
         <figure class="inline-story-image">
-          <img src="${escapeHTML(item.src)}" alt="${escapeHTML(item.alt)}">
-          ${item.caption ? `<figcaption>${escapeHTML(item.caption)}</figcaption>` : ''}
+          <img src="${escapeHTML(item.src)}" alt="${escapeHTML(item.alt || '')}">
+          ${item.caption ? `<figcaption>${renderInlineLinks(item.caption)}</figcaption>` : ''}
         </figure>
       `;
-    }
-
-    if (item.type === 'subhead') {
-      return `<h3 class="story-subhead">${escapeHTML(item.text)}</h3>`;
     }
 
     return '';

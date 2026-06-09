@@ -3,7 +3,6 @@ const els = {
   metricOccurrences: document.getElementById('metricOccurrences'),
   metricSpecies: document.getElementById('metricSpecies'),
   metricStates: document.getElementById('metricStates'),
-  metricTerritories: document.getElementById('metricTerritories'),
   speciesFilter: document.getElementById('speciesFilter'),
   stateFilter: document.getElementById('stateFilter')
 };
@@ -29,7 +28,6 @@ function populateMetrics() {
   els.metricOccurrences.textContent = features.length.toLocaleString();
   els.metricSpecies.textContent = species.size.toLocaleString();
   els.metricStates.textContent = states.size.toLocaleString();
-  els.metricTerritories.textContent = state.territories.features.length.toLocaleString();
 }
 
 function populateFilters() {

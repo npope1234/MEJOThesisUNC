@@ -16,7 +16,7 @@
 
   <main class="page">
     <section class="dashboard-hero">
-      <h1 style="font-size:clamp(2.6rem,6vw,5.2rem)">Understanding the Impact</h1>
+      <h1 style="font-size:clamp(2rem,4vw,3.8rem)">Understanding the Impact</h1>
       <p class="lede">
   This dashboard contextualizes the invasive plants map by providing climate data on temperature, precipitation and drought conditions across the Southeast. Climate data helps provide environmental context for invasive plant spread, but it
   does not explain the whole story. Temperature, precipitation and drought patterns
@@ -24,24 +24,22 @@
   land disturbance, ornamental planting, infrastructure, policy and stewardship all
   influence how invasive species move through the Southeast.
 </p>
-</p></p>
     </section>
 
     <section class="dashboard-grid" aria-label="Data summary metrics">
       <article class="metric-card"><strong id="metricOccurrences">—</strong><span>Total mapped occurrence records</span></article>
       <article class="metric-card"><strong id="metricSpecies">—</strong><span>Invasive plant species</span></article>
       <article class="metric-card"><strong id="metricStates">—</strong><span>States represented in records</span></article>
-      <article class="metric-card"><strong id="metricTerritories">—</strong><span>Territory features in overlay</span></article>
     </section>
 
     <section class="analytics-grid">
       <article class="chart-card">
-        <div class="section-heading"><div><h2>Spread over time</h2><p>Filter by species to see how recorded observations accumulate from 2000 to 2025.</p></div></div>
+        <div class="section-heading"><div><h2>Spread Over Time</h2><p>Filter by species to see how recorded observations accumulate from 2000 to 2025.</p></div></div>
         <div class="chart-controls"><select id="speciesFilter" class="filter-select"><option>Loading species…</option></select><select id="stateFilter" class="filter-select"><option value="all">All states</option></select></div>
         <canvas id="timelineChart" aria-label="Line chart showing occurrence counts by year"></canvas>
       </article>
       <article class="chart-card">
-        <h2>Top states</h2>
+        <h2>Top States</h2>
         <p class="subtle">Hover for exact counts. This chart updates with the species filter.</p>
         <canvas id="stateChart" aria-label="Bar chart showing top states"></canvas>
       </article>
@@ -49,7 +47,7 @@
 
     <section class="section analytics-grid">
       <article class="chart-card">
-        <h2>Species comparison</h2>
+        <h2>Species Comparison</h2>
         <p class="subtle">A bar chart comparing occurrence records by species across the current dataset.</p>
         <canvas id="speciesChart" aria-label="Bar chart showing species comparison"></canvas>
       </article>
@@ -90,40 +88,41 @@
     </select>
   </div>
 
+<section class="climate-chart-row">
   <article class="chart-card">
-  <h2>Average Annual Temperature</h2>
-  <p class="subtle">Annual average temperature for the selected state, 2000–2025.</p>
-  <canvas id="temperatureChart" aria-label="Line chart showing average annual temperature"></canvas>
+    <h2>Average Annual Temperature</h2>
+    <p class="subtle">Annual average temperature for the selected state, 2000–2025.</p>
+    <canvas id="temperatureChart" aria-label="Line chart showing average annual temperature"></canvas>
 
-  <p class="chart-caption">
-    Across the selected Southeastern states, annual temperatures fluctuate from year to year, but the later years generally show warmer conditions than the early 2000s. This pattern matters because longer warm periods can extend growing seasons and give some invasive plants more time to grow, reproduce, and recover after disturbance.
-  </p>
-</article>
+    <p class="chart-caption">
+      Across the selected Southeastern states, annual temperatures fluctuate from year to year, but the later years generally show warmer conditions than the early 2000s. This pattern matters because longer warm periods can extend growing seasons and give some invasive plants more time to grow, reproduce, and recover after disturbance.
+    </p>
+  </article>
 
-    <article class="chart-card">
-  <h2>Annual Precipitation</h2>
-  <p class="subtle">Annual precipitation for the selected state, 2000–2025.</p>
-  <canvas id="precipitationChart" aria-label="Line chart showing annual precipitation"></canvas>
+  <article class="chart-card">
+    <h2>Annual Precipitation</h2>
+    <p class="subtle">Annual precipitation for the selected state, 2000–2025.</p>
+    <canvas id="precipitationChart" aria-label="Line chart showing annual precipitation"></canvas>
 
-  <p class="chart-caption">
-    Annual precipitation shows that the Southeast experiences both very wet and relatively dry periods. These swings matter because heavy rainfall can increase flooding, erosion, and seed movement, while drier years can stress native vegetation and change plant competition.
-  </p>
-</article>
+    <p class="chart-caption">
+      Annual precipitation shows that the Southeast experiences both very wet and relatively dry periods. These swings matter because heavy rainfall can increase flooding, erosion, and seed movement, while drier years can stress native vegetation and change plant competition.
+    </p>
+  </article>
 
-  <section class="analytics-grid section">
-    <article class="chart-card">
-  <h2>Drought Conditions</h2>
-  <p class="subtle">
-    D1 means moderate drought or worse. D2+ means severe drought or worse.
-  </p>
-  <canvas id="droughtChart" aria-label="Line chart showing drought conditions"></canvas>
+  <article class="chart-card">
+    <h2>Drought Conditions</h2>
+    <p class="subtle">
+      <strong>D1</strong> means moderate drought or worse. <strong>D2+</strong> means severe drought or worse. “Percent area” is the percent of the selected state’s land area experiencing that drought category during a given year.
+    </p>
+    <canvas id="droughtChart" aria-label="Line chart showing drought conditions"></canvas>
 
-  <p class="chart-caption">
-    Drought conditions rise and fall unevenly across the timeline, with some years showing much larger areas in D1 or D2+ drought than others. These drought periods can weaken native plant communities, and the recovery period after drought may create openings for fast-growing invasive plants.
-  </p>
-</article>
+    <p class="chart-caption">
+      Drought conditions rise and fall unevenly across the timeline, with some years showing much larger areas in D1 or D2+ drought than others. These drought periods can weaken native plant communities, and the recovery period after drought may create openings for fast-growing invasive plants.
+    </p>
+  </article>
+</section>
 
-    <article class="text-card">
+<article class="text-card climate-why-card">
   <h2>Why this matters</h2>
   <ul class="insight-list">
     <li>

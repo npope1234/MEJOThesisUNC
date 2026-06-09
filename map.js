@@ -26,7 +26,7 @@ const elements = {
   totalSpecies: document.getElementById('totalSpecies'),
   detailsContent: document.getElementById('detailsContent'),
   toggleInvasive: document.getElementById('toggleInvasive'),
-  toggleTerritories: document.getElementById('toggleTerritories'),
+  //toggleTerritories: document.getElementById('toggleTerritories'),
 };
 
 const layerState = {
@@ -43,10 +43,186 @@ const layerState = {
   isAnimating: false,
 };
 
+const plantPhotosBySpecies = {
+  'Kudzu': [
+    {
+      src: './assets/kudzu.jpg',
+      },
+    {
+      src: './assets/kudzu3.jpg',
+     },
+    {
+      src: './assets/kudzu5.jpg',
+      }
+  ],
+
+  'Tree-of-Heaven': [
+    {
+      src: './assets/treeofheaven.jpeg',
+      },
+    {
+      src: './assets/treeofheaven2.jpeg',
+      },
+      {
+      src: './assets/treeofheaven3.jpeg',
+      }
+  ],
+
+  'Garlic Mustard': [
+    {
+      src: './assets/garlic_mustard.jpg',
+      },
+    {
+      src: './assets/garlic_mustard_.jpg',
+      },
+    {
+      src: './assets/garlicmustard.jpg',
+      }
+  ],
+
+  'Autumn Olive': [
+    {
+      src: './assets/autumnolive.jpg',
+     },
+    {
+      src: './assets/autumnolive2.jpg',
+    },
+    {
+      src: './assets/autumnolive3.jpg'
+    }
+  ],
+
+  'Hydrilla': [
+    {
+      src: './assets/hydrilla.jpeg',
+    },
+    {
+      src: './assets/hydrilla2.jpeg',
+      }
+  ],
+
+  'Japanese Honeysuckle': [
+    {
+      src: './assets/honeysuckle.jpeg',
+     },
+     {
+      src: './assets/honeysuckle2.jpeg',
+     }
+  ],
+
+  'Chinese Wisteria': [
+    {
+      src: './assets/wisteria.jpg',
+     },
+    {
+      src: './assets/wisteria2.jpg',
+      },
+      {
+      src: './assets/wisteria3.jpeg',
+     }
+  ],
+
+  'Common Reed': [
+    {
+      src: './assets/common_reed.jpeg',
+     },
+     {
+      src: './assets/commonreed.jpeg',
+     }
+  ],
+
+  'Japanese Stiltgrass': [
+    {
+      src: './assets/japstiltgrass.jpeg',
+      },
+      {
+      src: './assets/japstiltgrass2.jpg',
+     },
+     {
+      src: './assets/japstiltgrass3.jpg',
+     }
+  ],
+
+  'Purple Loosestrife': [
+    {
+      src: './assets/purpleloosestrife.jpeg',
+     },
+    {
+      src: './assets/purpleloosestrife2.jpg',
+      }
+  ],
+
+  'Multiflora Rose': [
+    {
+      src: './assets/multiflorarose.jpeg'},
+    {
+      src: './assets/multiflorarose2.jpeg'},
+    {
+      src: './assets/multiflorarose3.jpeg'}   
+  ],
+
+  'Chinese Tallow Tree': [
+    {
+      src: './assets/_chinese_tallow_tree_.jpeg',
+    },
+    {
+      src: './assets/chinese_tallow_tree.jpeg',
+    },
+    {
+      src: './assets/chinesetallowtree.jpeg',
+    }
+  ],
+
+  'Chinese Privet': [
+    {
+      src: './assets/chineseprivet.jpeg',
+    },
+    {
+      src: './assets/chineseprivet2.jpeg',
+    }
+  ]
+};
+
+function renderPlantPhotoCarousel(species) {
+  const photos = plantPhotosBySpecies[species] || [];
+
+  if (!photos.length) {
+    return '';
+  }
+
+  const slides = photos.map((photo, index) => `
+    <figure class="plant-photo-slide ${index === 0 ? 'active' : ''}" data-slide="${index}">
+      <img src="${escapeHTML(photo.src)}" alt="${escapeHTML(species)} plant photo">
+      ${photo.caption ? `<figcaption>${escapeHTML(photo.caption)}</figcaption>` : ''}
+    </figure>
+  `).join('');
+
+  const dots = photos.map((_, index) => `
+    <button class="plant-photo-dot ${index === 0 ? 'active' : ''}" type="button" data-slide="${index}" aria-label="Show plant photo ${index + 1}"></button>
+  `).join('');
+
+  const controls = photos.length > 1 ? `
+    <div class="plant-photo-controls">
+      <button class="plant-photo-prev" type="button" aria-label="Previous plant photo">‹</button>
+      <div class="plant-photo-dots">${dots}</div>
+      <button class="plant-photo-next" type="button" aria-label="Next plant photo">›</button>
+    </div>
+  ` : '';
+
+  return `
+    <div class="plant-photo-carousel" data-species="${escapeHTML(species)}">
+      <div class="plant-photo-slides">
+        ${slides}
+      </div>
+      ${controls}
+    </div>
+  `;
+}
+
 const plantDescriptionBySpecies = {
   'Kudzu': 'Climbing, deciduous vine with fleshy tap roots. Leaves are alternate, compound with three, usually lobed, leaflets and is hairy underneath. Flowers are long, purple, and fragrant, hang clusters in the axils of the leaves. Fruits are brown, hairy and flat with wide seed pods.',
   'Chinese Privet': 'Semi-evergreen shrub or small tree with a trunk that usually occurs as multiple stems with many long, leafy branches. Leaves are opposite and oblong. Foliage can be pubescent along the underside of the midvein. Typically from April to June, panicles of white/cream flowers develop in terminal and upper axillary clusters. Fruit begins greens, ripens to dark purple/black. Birds and other wildlife eat the fruit then disperse the seeds. Plant also colonizes by root sprouts.',
-  'Chinese Tallowtree': 'Deciduous tree with alternate, heart-shaped leaves with long, pointed tips. When flowering, flowers are yellowish and occur on long, dangling spikes. Fruit are three-lobed and found in clusters at the end of the branches.',
+  'Chinese Tallow Tree': 'Deciduous tree with alternate, heart-shaped leaves with long, pointed tips. When flowering, flowers are yellowish and occur on long, dangling spikes. Fruit are three-lobed and found in clusters at the end of the branches.',
   'Chinese Wisteria': 'Deciduous woody vine with stems that have smooth, gray-brown bark. When looking down on the vine, it twines in a counter clockwise direction around the host. Alternate, pinnately compound leaves are tapered at the tip with wavy edges. Lavender, purple or white flowers are fragrant, very showy and abundant and occur in long, dangling clusters in the spring. Seeds are contained in flattened, hairy, bean-like pods. Invasions often occur around previous plantings.',
   'Common Reed': 'Tall, perennial grass with broad, pointed leaves that arise from thick, vertical stalks. Leaves are flat and glabrous. The flower heads are dense, fluffy, gray or purple in color. The seeds are brown and light weight. In the fall the plant turns brown, and the inflorescences persist throughout the winter.',
   'Garlic Mustard': 'Herbaceous, biennial forb. First year plants are basal rosettes which bolt and flower in the second year. Plants can be easily recognized by a garlic odor that is present when any part of the plant is crushed. Foliage on first year rosettes is green, heart shaped leaves. Foliage becomes more triangular and strongly toothed as the plant matures. Second year plants produce a tall flowering stalk. Each flower has four small, white petals in the early spring. Mature seeds are shiny black and produced in erect, slender green pods which turn pale brown when mature.',
@@ -62,7 +238,7 @@ const plantDescriptionBySpecies = {
 const regionImpactBySpecies = {
   'Kudzu': 'Native to Asia, was introduced to the United States in 1876 at the Philadelphia Centennial Exposition. Featured in the Japanese Pavilion, the vine was initially promoted as an ornamental, aromatic plant for covering porches and arbors. Its rapid growth and hardy nature later led to its widespread promotion for erosion control in the 1930s. They prefer open, undisturbed areas like roadsides, right-of-ways, forest edges, and old fields. It grows over, shades out, and kills all other vegetation, including trees.',
   'Chinese Privet': 'Native to Europe and Asia, was introduced in 1852 as an ornamental plant. Commonly used as an ornamental shrub and for hedgerows. Several species occur, and distinguishing between them can be difficult. It can tolerate a wide range of conditions. Forms dense thickets that invade fields, fencerows, roadsides, forest understories, and riparian sites. They can shade out and exclude native understory species, even reducing tree recruitment.',
-  'Chinese Tallowtree': "Native to China, was introduced to South Carolina in 1776 for ornamental purposes and seed oil production. Invades wet areas like stream banks and ditches, can also sometimes invade drier upland sites. It's threat comes from its ability to invade high quality, undisturbed forests. It can displace native vegetation and alter soil conditions due to high amounts of tannis present in the leaf litter.",
+  'Chinese Tallow Tree': "Native to China, was introduced to South Carolina in 1776 for ornamental purposes and seed oil production. Invades wet areas like stream banks and ditches, can also sometimes invade drier upland sites. It's threat comes from its ability to invade high quality, undisturbed forests. It can displace native vegetation and alter soil conditions due to high amounts of tannis present in the leaf litter.",
   'Chinese Wisteria': 'A native of China, it was first introduced into the United States in 1816 for ornamental purposes. Can displace native vegetation and kill trees and shrubs by girdling them. The vine has the ability to change the structure of a forest by killing trees and altering the light availability to the forest floor.',
   'Common Reed': 'Native to Eurasia and Africa. Native Phragmites do occur in the United States and they are sometimes very difficult to distinguish from the exotics. Usually found in dense thickets growing in or near shallow water. These thickets displace native wetlands plants, alter hydrology and block sunlight to the aquatic community.',
   'Garlic Mustard': 'Native to Europe and was first introduced during the 1800s for medicinal and culinary purposes. An aggressive invader of wooded areas throughout the eastern and middle United States. A high shade tolerance allows this plant to invade high quality, mature woodlands, where it can form dense stands. These stands not only shade out native understory flora but also produce allelopathic compounds that inhibit seed germination of other species.',
@@ -100,7 +276,7 @@ async function loadData() {
 }
 
 map.on('click', (event) => {
-  if (!layerState.territoriesData || !elements.toggleTerritories.checked) return;
+  if (!layerState.territoriesData) return;
 
   const overlappingTerritories = getTerritoriesAtPoint(event.latlng);
 
@@ -179,8 +355,6 @@ function initializeControls() {
   updateMap({ fitBounds: false });
 });
   elements.toggleInvasive.addEventListener('change', syncLayerVisibility);
-  elements.toggleTerritories.addEventListener('change', syncLayerVisibility);
-
   populateTerritorySelect();
 }
 
@@ -356,7 +530,7 @@ function buildTerritoriesLayer() {
 }
 
 function syncLayerVisibility() {
-  toggleLayer(layerState.territoryLayer, elements.toggleTerritories?.checked);
+  toggleLayer(layerState.territoryLayer, true);
   toggleLayer(layerState.invasiveLayer, elements.toggleInvasive?.checked);
 
   if (layerState.territoryLayer && map.hasLayer(layerState.territoryLayer)) {
@@ -367,6 +541,7 @@ function syncLayerVisibility() {
     layerState.invasiveLayer.bringToFront();
   }
 }
+
 function toggleLayer(layer, shouldShow) {
   if (!layer) return;
   if (shouldShow && !map.hasLayer(layer)) layer.addTo(map);
@@ -406,7 +581,7 @@ function updateMap(options = {}) {
   syncLayerVisibility();
   const layersToFit = [];
   if (elements.toggleInvasive.checked && layerState.invasiveLayer.getLayers().length) layersToFit.push(layerState.invasiveLayer);
-  if (elements.toggleTerritories.checked && layerState.territoryLayer) layersToFit.push(layerState.territoryLayer);
+  if (layerState.territoryLayer) layersToFit.push(layerState.territoryLayer);
   if (fitBounds && layersToFit.length) {
   const bounds = L.featureGroup(layersToFit).getBounds();
   if (bounds.isValid()) map.fitBounds(bounds.pad(0.04), { animate:false });
@@ -425,10 +600,12 @@ function renderOccurrenceDetails(feature) {
     'Plant description is not available for this species.';
 
   elements.detailsContent.innerHTML = `
-    <div class="badge">Occurrence point selected</div>
+  <div class="badge">Occurrence point selected</div>
 
-    <div class="info-block">
-      <h3>Basic occurrence data</h3>
+  ${renderPlantPhotoCarousel(props.species)}
+
+  <div class="info-block">
+    <h3>Basic occurrence data</h3>
       <div class="info-grid">
         <div>
           <span class="label">Scientific name</span>
@@ -459,6 +636,51 @@ function renderOccurrenceDetails(feature) {
       <p>${escapeHTML(speciesImpact)}</p>
     </div>
   `;
+
+  initializePlantPhotoCarousel();
+}
+
+function initializePlantPhotoCarousel() {
+  const carousel = elements.detailsContent.querySelector('.plant-photo-carousel');
+
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('.plant-photo-slide'));
+  const dots = Array.from(carousel.querySelectorAll('.plant-photo-dot'));
+  const prevButton = carousel.querySelector('.plant-photo-prev');
+  const nextButton = carousel.querySelector('.plant-photo-next');
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentSlide);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      showSlide(currentSlide - 1);
+    });
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      showSlide(currentSlide + 1);
+    });
+  }
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      showSlide(Number(dot.dataset.slide));
+    });
+  });
 }
 
 function renderTerritoryDetails(feature) {

@@ -19,7 +19,6 @@
       <a class="active" href="./map.html">Explore Map</a>
       <a href="./dashboard.html">Data Insights</a>
       <a href="./stories.html">Stories & Voices</a>
-      
     </nav>
   </header>
 
@@ -53,7 +52,10 @@ This map is an exploratory tool for seeing where selected invasive plant records
         <div class="divider"></div>
         <h3>Map Layers</h3>
         <label class="switch-row"><span>Invasive Species</span><span class="switch"><input id="toggleInvasive" type="checkbox" checked /><span class="slider"></span></span></label>
-        <label class="switch-row"><span>Indigenous Lands</span><span class="switch"><input id="toggleTerritories" type="checkbox" checked /><span class="slider"></span></span></label>
+        <div class="switch-row layer-label-row">
+  <span>Indigenous Territories</span>
+  <span class="layer-always-on"></span>
+</div>
 
       <div class="divider"></div>
       
@@ -83,10 +85,7 @@ This map is an exploratory tool for seeing where selected invasive plant records
     </aside>
 
     <section class="map-stage">
-  <div class="instruction-card">
-    <div>ⓘ Click occurrence points to view plant details</div>
-    <div class="subtle">Click anywhere on the map to see overlapping Indigenous territories</div>
-  </div>
+  
   <div id="map"></div>
 </section>
 
@@ -97,12 +96,32 @@ This map is an exploratory tool for seeing where selected invasive plant records
           <div class="empty-state"><strong></strong><p>Click an occurrence point to view species, date, place, cultural context, and environmental impact. Click an Indigenous territory for regional context.</p></div>
         </div>
       </section>
+
       <section class="map-panel-card">
         <h3>How to read this map</h3>
         <p class="subtle">Point density reflects available observations, not the full ecological presence of each species. Territory overlays are interpretive context layers and should not be treated as official boundary statements.</p>
       </section>
+
+      <section class="map-panel-card source-card">
+  <h3>Sources</h3>
+
+  <p class="subtle">
+    Invasive plant occurrence records were acquired from
+    <a href="https://www.gbif.org/" target="_blank" rel="noopener noreferrer">
+      GBIF, the Global Biodiversity Information Facility
+    </a>.
+  </p>
+
+  <p class="subtle">
+    Indigenous territory boundary data were acquired from the
+    <a href="https://opdgig.dos.ny.gov/datasets/NYSDOS::indigenous-territories-native-land-digital/about" target="_blank" rel="noopener noreferrer">
+      Indigenous Territories — Native Land Digital dataset
+    </a>.
+  </p>
+</section>
     </aside>
   </main>
+
 
   <footer class="footer page">Designed as an educational platform prototype in assistance with AI.</footer>
 

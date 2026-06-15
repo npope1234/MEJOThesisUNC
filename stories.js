@@ -220,7 +220,7 @@ const stories = [
     image: './assets/danielle hiraldo.AVIF',
     caption: '',
     name: 'Dr. Danielle Hiraldo',
-    section: 'The Data',
+    section: 'The Land & the People',
     affiliation: 'American Indian Center, UNC-Chapel Hill',
     role: 'Director',
     title: 'Sovereignty, consent and the ethics of environmental mapping',

@@ -236,8 +236,6 @@ const stories = [
       
       'That history shapes how tribal nations relate to state and federal governments today. Hiraldo explained that federally recognized tribes have a formal government-to-government relationship with the United States, while state-recognized tribes have a political relationship with the state where they share geography. The Lumbee Tribe, of which Hiraldo is a citizen, has recently been federally-recognized. Prior to this, she said the Lumbee have exercised sovereignty through institutions such as a separate school system and other forms of self-governance, even without full federal recognition.',
       
-      'The NC Board of Commissioners recognizing the Lumbee tribe’s journey to federal recognition.',
-      
       {
         type: 'image',
         src: './assets/lumbeerecognition.JPG',

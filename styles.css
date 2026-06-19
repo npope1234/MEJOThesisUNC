@@ -1405,7 +1405,7 @@ input:checked + .slider:before {
   width: 100%;
   height: auto;
   max-height: none;
-  object-fit: unset;
+  object-fit: cover;
   display: block;
 }
 .story-section-cards {

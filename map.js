@@ -343,10 +343,24 @@ function initializeControls() {
   const speciesList = [...new Set(layerState.invasiveData.features.map((f) => f.properties.species))].filter(Boolean).sort((a,b) => a.localeCompare(b));
   if (!speciesList.includes(layerState.currentSpecies)) layerState.currentSpecies = speciesList[0];
   elements.totalSpecies.textContent = speciesList.length.toString();
-  elements.speciesSelect.innerHTML = speciesList.map((species) => `<option value="${species}" ${species === layerState.currentSpecies ? 'selected' : ''}>${species}</option>`).join('');
-  elements.speciesSelect.addEventListener('change', () => {
+  elements.speciesSelect.innerHTML = speciesList
+  .map(
+    (species) =>
+      `<option value="${species}" ${
+        species === layerState.currentSpecies ? 'selected' : ''
+      }>${species}</option>`
+  )
+  .join('');
+
+renderSelectedSpeciesPhoto(layerState.currentSpecies);
+
+elements.speciesSelect.addEventListener('change', () => {
   stopSpreadAnimation();
+
   layerState.currentSpecies = elements.speciesSelect.value;
+
+  renderSelectedSpeciesPhoto(layerState.currentSpecies);
+
   startSpreadAnimation();
 });
   elements.yearSlider.addEventListener('input', () => {
@@ -586,6 +600,21 @@ function updateMap(options = {}) {
   const bounds = L.featureGroup(layersToFit).getBounds();
   if (bounds.isValid()) map.fitBounds(bounds.pad(0.04), { animate:false });
 }
+}
+
+function renderSelectedSpeciesPhoto(species) {
+  elements.detailsContent.innerHTML = `
+    <div class="badge">Species selected</div>
+
+    ${renderPlantPhotoCarousel(species)}
+
+    <p class="subtle">
+      Click an occurrence point to view the description,
+      environmental context and location details.
+    </p>
+  `;
+
+  initializePlantPhotoCarousel();
 }
 
 function renderOccurrenceDetails(feature) {

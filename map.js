@@ -163,7 +163,7 @@ const plantPhotosBySpecies = {
 
   'Chinese Tallow Tree': [
     {
-      src: './assets/_chinese_tallow_tree2.jpeg',
+      src: './assets/chinese_tallow_tree2.jpeg',
     },
     {
       src: './assets/chinese_tallow_tree.jpeg',
